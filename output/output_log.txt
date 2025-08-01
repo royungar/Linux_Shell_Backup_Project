@@ -1,0 +1,10 @@
+# Script Output
+the first argument is important-documents
+the second argument is .
+ana.txt
+doi.txt
+zop.txt
+Backup successful: /home/project/backup-1718832747.tar.gz
+
+# Backup Directory Contents (filtered to show only backup output)
+-rw-r--r-- 1 theia users 4423 Jun 19 17:32 backup-1718832747.tar.gz

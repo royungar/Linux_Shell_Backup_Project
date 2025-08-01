@@ -1,0 +1,27 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux file metadata
+*~
+
+# Backup files
+*.bak
+*.swp
+*.swo
+*.tmp
+
+# Thumbnails and trash (sometimes created in IDEs or desktop)
+._*
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs and temp output (safety)
+*.log
+*.out
+
+# Exclude node_modules and other heavy folders (not relevant now but future-proof)
+node_modules/
