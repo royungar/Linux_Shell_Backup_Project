@@ -79,7 +79,7 @@ Backup successful: /home/project/backup-1718832747.tar.gz
 Linux_Shell_Backup_Project/
 ├── README.md                        # Project overview and usage instructions (this file)
 ├── backup.sh                        # Main backup script written in Bash
-├── crontab_entry.txt                # `cron` entry to automate backup execution
+├── crontab_entry.txt                # cron entry to automate backup execution
 ├── data/                            # Input data files (used for test backup)
 │   ├── ana.txt
 │   ├── doi.txt
@@ -89,7 +89,7 @@ Linux_Shell_Backup_Project/
 ├── images/
 │   ├── task15_executable.png        # Screenshot: script made executable
 │   ├── task16_backup_complete.png   # Screenshot: successful backup archive
-│   └── task17_crontab.png           # Screenshot: `crontab` entry for automation
+│   └── task17_crontab.png           # Screenshot: crontab entry for automation
 ```
 
 ---
@@ -126,11 +126,12 @@ Linux_Shell_Backup_Project/
 
 To schedule the backup script to run automatically at a fixed time, you can set up a `cron` job.
 
-For example, to run the backup daily at **midnight**, add the following entry to your crontab:
+For example, to run the backup daily at **midnight**, add the following entry to your `crontab`:
 
 ```bash
 0 0 * * * /usr/local/bin/backup.sh /home/project/important-documents /home/project
 ```
+For convenience, this `cron` entry is also saved in [`crontab_entry.txt`](./crontab_entry.txt).
 
 To edit your `crontab`:
 
@@ -138,10 +139,9 @@ To edit your `crontab`:
 crontab -e
 ```
 
-**Note:**  
-This path (`/usr/local/bin/backup.sh`) reflects the script's location in the original IBM Skills Network environment. **On your local system**, you may need to adjust the full path to the script and input/output folders accordingly.
-
-For convenience, this `cron` entry is also saved in [`crontab_entry.txt`](./crontab_entry.txt).
+>**Note:**  
+>This path (`/usr/local/bin/backup.sh`) reflects the script's location in the original IBM Skills Network environment. **On your local system**, 
+>you may need to adjust the full path to the script and input/output folders accordingly.
 
 > **Tip for Local Testing:**  
 > If you're running this project locally (not in the IBM Cloud IDE), you can use a `cron` job like the following:
